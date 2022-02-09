@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for controlling a pwm fan
+
+[Service]
+ExecStart=/opt/pwmfanservice/PWMFanService
+Restart=always
+WorkingDirectory=/opt/pwmfanservice
+
+[Install]
+WantedBy=multi-user.target

@@ -16,10 +16,20 @@ I assume you already connected your fans power and ground cable to the Raspberry
 Connect your fans pwm connector to **pin 18**.
 ### Software
 
+Create a new directory for the files and change into it
+```bash
+mkdir pwmfanservice
+cd pwmfanservice
+```
 
 Get the latest release be downloading it.
-
+```bash
+wget https://github.com/projectflx/pwmfanservice/releases/download/v1.0.0/PWMFanService.tar.gz
+```
 Extract the files
+```bash
+tar xvf PWMFanService.tar.gz
+```
 
 Change directory into the scripts folder, add execution permission and run the script with elevated rights.
 ```bash
